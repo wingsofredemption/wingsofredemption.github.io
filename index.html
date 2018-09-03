@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Title</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  </head>
-  <body>
-    
-     <div class="container">
-       <div class="left">
-       </div>
-       <div class="right">
-         <iframe frameborder="0"
-        scrolling="no"
-        id="chat_embed"
-        src="https://www.twitch.tv/embed/wingsofredemption/chat"
-        width="350"></iframe>
-       </div>
+    <title>Wings of Redemption</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+     <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="video">
+            <button id="toggle_chat_button" onclick="toggle_chat()">></button>
+            <iframe frameborder="0" scrolling="no" src="https://mixer.com/embed/player/SpacyAmoeba4258"></iframe>
+        </div>
+        <div id="chat">
+            <iframe frameborder="0" scrolling="no" src="https://www.twitch.tv/embed/wingsofredemption/chat" width="350"></iframe>
+        </div>
     </div>
-    
-    
-  </body>
+</body>
+
 </html>
